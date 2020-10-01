@@ -11,10 +11,10 @@ services:
       DATABASE_URL: postgres://grapho:123456@account_db/grapho?sslmode=disable
     restart: on-failure
 
-  catalog:
+  order_catalog:
     build:
       context: .
-      dockerfile: ./services/catalog/app.Dockerfile
+      dockerfile: ./services/order_catalog/app.Dockerfile
     depends_on:
       - catalog_db
     environment:
@@ -58,7 +58,7 @@ services:
       POSTGRES_PASSWORD: 123456
     restart: unless-stopped
 
-  catalog_db:
+  order_catalog_db:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.2.4
     environment:
       ES_JAVA_OPTS: -Xms1g -Xmx1g
