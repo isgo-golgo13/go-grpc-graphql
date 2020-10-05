@@ -8,9 +8,9 @@ import (
 	"log"
 	"net"
 
-	"github.com/tinrab/spidey/account"
-	"github.com/tinrab/spidey/catalog"
-	"github.com/tinrab/spidey/order/pb"
+	"github.com/isgo-golgo13/go-grpc-graphql/services/account"
+	"github.com/isgo-golgo13/go-grpc-graphql/services/catalog"
+	"github.com/isgo-golgo13/go-grpc-graphql/services/order/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )
