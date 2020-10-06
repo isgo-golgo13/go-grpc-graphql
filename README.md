@@ -14,12 +14,12 @@ For each of the services (account, order, order_catalog, graphql), `cd` into the
 `protoc --proto_path=./account --go_out=./account/pb ./account/account.proto`
 
 
-For `services/order` issue the following (from directory services/account):
+##### For `services/order` issue the following (from directory services/account):
 
 `protoc --proto_path=./order --go_out=./order/pb ./order/ordert.proto`
 
 
-For `services/order_catalog` issue the following (from directory services/account):
+##### For `services/order_catalog` issue the following (from directory services/account):
 
 `protoc --proto_path=./order_catalog --go_out=./order_catalog/pb ./order_catalog/order_catalog.proto`
 
