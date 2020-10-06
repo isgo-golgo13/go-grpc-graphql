@@ -1,6 +1,6 @@
 FROM golang:1.13-alpine3.11 AS build
 RUN apk --no-cache add gcc g++ make ca-certificates
-WORKDIR /go/src/github.com/tinrab/spidey
+WORKDIR /go/src/github.com/isgo-golgo13/go-grpc-graphql
 COPY go.mod go.sum ./
 COPY vendor vendor
 COPY account account
